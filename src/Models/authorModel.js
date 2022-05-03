@@ -1,6 +1,6 @@
 const {default: mongoose} = require("mongoose");
-require('mongoose-type-email')
 
+require('mongoose-type-email')
 const authorSchema = new mongoose.Schema ({
 fname: {
       type: String,
@@ -15,7 +15,7 @@ lname: {
 title: {
     type: String,
     required: true, 
-    enum: ["Mr", "Mrs", "Ms"],
+    enum: ["Mr", "Mrs", "Miss"],
     trim:true
 }, 
 email: {
